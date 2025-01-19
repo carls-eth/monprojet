@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Configuration de base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Produit</title>
+    <!-- Fichiers externes -->
+    <link rel="stylesheet" href="monproduit.css">
+    <script src="monproduit.js" defer></script>
+</head>
+
+<body>
+    <!-- En-tête avec logo et navigation -->
+    <header>
+        <div class="header-container">
+            <!-- Conteneur du logo -->
+            <div class="logo-container">
+                <img src="cartomania.png" alt="Cartomania Logo" class="main-logo">
+            </div>
+            
+            <!-- Barre de recherche et panier -->
+            <div class="top-bar">
+                <a href="#panier" class="cart">PANIER</a>
+                <button id="dark-mode-toggle">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation fil d'ariane -->
+    <div class="breadcrumb">
+        <a href="monsite.html">Accueil</a> > 
+        <a href="#">Catégorie</a> > 
+        <span>Carte</span>
+    </div>
+
+    <!-- Section principale du produit -->
+    <section class="product-details">
+        <!-- Image du produit -->
+        <div class="product-image">
+            <img src="carte1.jpg" alt="Carte de collection" class="image">
+        </div>
+
+        <!-- Informations du produit -->
+        <div class="product-info">
+            <div class="product-text">
+                <h2>Le garçon habillé en cowboy</h2>
+                <p>
+                    Carte de collection. Cette carte exclusive est un véritable trésor pour les collectionneurs passionnés. Avec ses détails soignés et le point que nous mettons sur la qualité, elle représente une pièce maîtresse pour enrichir votre collection de cartes rares. 
+                </p>
+                <!-- Détails supplémentaires du produit -->
+                <details>
+                    <summary>Voir plus</summary>
+                    <p>Caractéristiques :
+                        <li><strong>Type :</strong> Carte à collectionner</li>
+                        <li><strong>Dimensions :</strong> 6 x 9 cm</li>
+                        <li><strong>Matériau :</strong> Papier premium</li>
+                        <li><strong>Édition limitée :</strong> Oui</li>
+                        <li><strong>Condition :</strong> Neuve, sous protection plastique</li>
+                    </p>
+                    <p>Retour gratuit sous 15 jours.</p>
+                </details>
+            </div>
+
+            <!-- Section quantité et ajout au panier -->
+            <div class="quantity-cart">
+                <label for="quantity">Quantité :</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Section À propos -->
+        <div class="footer-section">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="/about">Notre histoire</a></li>
+                <li><a href="/team">L'équipe</a></li>
+            </ul>
+        </div>
+    
+        <!-- Section CGV -->
+        <div class="footer-section">
+            <h3>Conditions Générales de Vente</h3>
+            <ul>
+                <li><a href="/terms">Voir les CGV</a></li>
+            </ul>
+        </div>
+    
+        <!-- Section confidentialité -->
+        <div class="footer-section">
+            <h3>Politique de confidentialité</h3>
+            <ul>
+                <li><a href="/privacy-policy">Voir la politique</a></li>
+            </ul>
+        </div>
+    
+        <!-- Section FAQ -->
+        <div class="footer-section">
+            <h3>FAQ</h3>
+            <ul>
+                <li><a href="/faq">Voir les questions fréquemment posées</a></li>
+            </ul>
+        </div>
+    
+        <!-- Section livraison -->
+        <div class="footer-section">
+            <h3>Livraison et Retour</h3>
+            <ul>
+                <li><a href="/shipping">Informations sur la livraison</a></li>
+                <li><a href="/returns">Politique de retour</a></li>
+            </ul>
+        </div>
+    
+        <!-- Réseaux sociaux -->
+        <div class="footer-section">
+            <h3>Nos réseaux sociaux</h3>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    
+        <!-- Section newsletter -->
+        <div class="footer-section">
+            <h3>Notre newsletter</h3>
+            <form action="/subscribe" method="POST">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    
+        <!-- Mentions légales -->
+        <div class="footer-section">
+            <h3>Mentions légales</h3>
+            <ul>
+                <li><a href="/legal">Voir les mentions légales</a></li>
+            </ul>
+        </div>
+    
+        <!-- Crédits -->
+        <div class="footer-credits">
+            <p>&copy; 2024 Cartomania.
+        </div>
+    </footer>
+</body>
+</html>

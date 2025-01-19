@@ -1,0 +1,778 @@
+/*ajoute de police du texte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Police et couleur */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+    margin: 0;
+    padding: 0; 
+}
+
+/*  police n2 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Style du logo texte */
+.text-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0; 
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.main-logo {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    color: #333333; 
+    text-transform: uppercase; 
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+/* navigation / menu */
+nav {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Barre de recherche / Panier */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+/* Barre de recherche à gauche */
+.search-bar {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Conteneur des éléments à droite (S'IDENTIFIER et Panier) */
+.right-items {
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour le lien "S'IDENTIFIER" */
+.identifier-link {
+    margin-right: 10px; /* Espacement entre S'IDENTIFIER et le panier */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.identifier-link:hover {
+    color: #007bff;
+}
+
+.dark-mode .identifier-link {
+    color: white;
+}
+
+.dark-mode .identifier-link:hover {
+    color: #007bff;
+}
+
+/* Style du panier */
+.cart {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cart:hover {
+    color: #007bff;
+}
+
+.dark-mode .cart {
+    color: white;
+}
+
+.dark-mode .cart:hover {
+    color: #007bff;
+}
+/* header */
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* texte sous le header */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e4e2dd;
+    margin: 0;
+    padding: 10px;
+}
+
+/* colonnes */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*  taille des images */
+.column img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* le footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.main-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/*  personalisation pour les téléphones */
+@media screen and (max-width: 768px) {
+    .main-logo {
+        font-size: 32px; 
+        letter-spacing: 1px; 
+    }
+
+    
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+    
+    .search-bar {
+        width: 150px;
+        font-size: 14px;
+     }
+}
+
+/* footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section a:hover {
+    color: #007bff;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #007bff;
+}
+
+footer .footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-section form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+footer .footer-section form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .footer-section form button:hover {
+    background-color: #0056b3;
+}
+
+footer .footer-credits {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-section {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .footer-section {
+        width: 100%;
+    }
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-logo {
+    width: 200px; 
+    height: auto;
+}
+
+/* Style du bouton Dark/Light Mode */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Ajout des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Style par défaut du site */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Barre de recherche et panier */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.top-bar .search-bar {
+    width: 60%;
+    padding: 8px;
+}
+
+.top-bar .cart {
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background-color: #333; /* Fond noir pour le body */
+    color: white; /* Texte blanc */
+}
+
+.dark-mode header h1 {
+    color: white; /* Titre en blanc */
+}
+
+.dark-mode nav {
+    background-color: #444; /* Fond gris foncé pour la barre de navigation */
+}
+
+.dark-mode nav a {
+    color: white; /* Liens en blanc */
+}
+
+.dark-mode nav a:hover {
+    color: #007bff; /* Lien au survol */
+}
+
+.dark-mode .top-bar {
+    background-color: #444; /* Fond gris foncé pour la barre de recherche et panier */
+}
+
+.dark-mode .top-bar .search-bar {
+    background-color: #555; /* Fond gris clair pour la barre de recherche */
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode .cart {
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #444; /* Fond gris foncé pour le footer */
+    padding: 15px;
+    text-align: center;
+}
+
+.dark-mode footer a {
+    color: white;
+}
+
+.dark-mode footer a:hover {
+    color: #007bff; /* Lien au survol */
+}
+
+.dark-mode .column {
+    background-color: #555; /* Fond gris foncé pour les colonnes */
+    border: 1px solid #666;
+}
+
+.dark-mode .column img {
+    border: 1px solid #444; /* Bordure plus claire pour les images */
+}
+
+.dark-mode p {
+    background-color: #222; /* Fond de paragraphe encore plus foncé */
+    color: white; /* Texte blanc */
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #444; /* Fond gris foncé pour le bouton */
+    color: white; /* Texte blanc */
+    border: none;
+    cursor: pointer;
+}
+
+/* Modifications supplémentaires pour mieux gérer les transitions */
+body, .top-bar, .column, nav, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style des titres dans le footer */
+footer .footer-section h3 {
+    color: #007bff; /* Bleu pour les titres, dans le mode clair */
+}
+
+/* Mode sombre */
+.dark-mode footer .footer-section h3 {
+    color: #007bff; /* Même bleu pour les titres, dans le mode sombre */
+}
+
+/* En mode sombre, on garde le titre en noir */
+.dark-mode header h1 {
+    color: #000000; /* Noir pour le titre en mode sombre */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1; /* couleur claire par défaut */
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    position: relative; /* Assure que le footer reste fixe en bas de page */
+    z-index: 10; /* Pour éviter qu'il ne soit recouvert par d'autres éléments */
+}
+
+/* En mode sombre */
+.dark-mode footer {
+    background-color: #333; /* Fond sombre en mode sombre */
+    color: white; /* Texte en blanc */
+}
+
+/* Réglage de la section des liens sociaux */
+footer .social-links {
+    display: inline-block; /* Assure que les liens sont affichés en ligne */
+    margin-top: 10px; /* Un peu de marge pour espacer des autres sections */
+}
+
+footer .social-links a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 15px; /* Un peu d'espace entre les liens */
+    font-weight: bold; /* Rendre le texte plus visible */
+}
+
+/* Éviter les décalages dus aux titres */
+footer .footer-section {
+    margin-bottom: 10px;
+}
+
+footer .footer-section h3 {
+    color: #007bff; /* Bleu pour les titres */
+    margin: 0; /* Évite l'impact du margin sur le mouvement du footer */
+    padding-bottom: 5px; /* Un petit espacement sous les titres pour maintenir l'ordre */
+}
+
+/* Enlever la couleur bleue au survol des liens dans le footer */
+footer .footer-section a {
+    color: inherit; /* Assure que la couleur du lien reste la même */
+    text-decoration: none; /* Retirer le soulignement des liens */
+}
+
+footer .footer-section a:hover {
+    color: inherit; /* Garder la même couleur au survol */
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Centrer l'icône horizontalement */
+    align-items: center; /* Centrer l'icône verticalement */
+    font-size: 30px; /* Taille de l'icône */
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Barre de navigation - Mode clair */
+nav {
+    background-color: #f5f5f5; /* Gris très clair */
+    padding: 10px 0;
+}
+
+/* Liens de navigation - Mode clair */
+nav ul li a {
+    color: #333; /* Gris foncé pour le texte */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Barre de navigation - Mode sombre */
+.dark-mode nav {
+    background-color: #333; /* Gris foncé */
+}
+
+/* Liens de navigation - Mode sombre */
+.dark-mode nav ul li a {
+    color: #f5f5f5; /* Texte blanc/gris très clair */
+}
+
+/* Style des tabs */
+.tabs-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.tabs-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Style des avis */
+.review {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.date {
+    color: #666;
+}
+
+/* Dark mode support */
+.dark-mode .tabs-container {
+    background-color: #333;
+}
+
+.dark-mode .tabs-container h2 {
+    color: #fff;
+}
+
+.dark-mode .tab-button {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .tab-button.active {
+    background-color: #007bff;
+}
+
+.dark-mode .review {
+    border-color: #444;
+}
+
+.dark-mode .review p {
+    background-color: transparent;
+}
+
+.dark-mode .date {
+    color: #999;
+}
+
+/* Dark mode modifications */
+.dark-mode .tabs-container {
+    background-color: #555; /* Même couleur que les colonnes en mode sombre */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Ombre plus prononcée pour la séparation */
+}
+
+.dark-mode .review {
+    border-color: #666; /* Bordure légèrement plus visible */
+}
+
+.dark-mode .review p {
+    background-color: #222; /* Même couleur que le fond des textes des cartes */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.dark-mode .review-header {
+    color: white; /* Pour assurer la lisibilité */
+}
+
+.dark-mode .tabs-container h2 {
+    color: white;
+}
+
+/* Ajustement pour que le conteneur se démarque mieux du fond en mode sombre */
+.dark-mode .tabs-container {
+    border: 1px solid #666;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .tabs-container {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .tabs {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .tab-button {
+        width: 100%;
+    }
+}

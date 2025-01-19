@@ -1,0 +1,474 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* --- STYLE GLOBAL --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HEADER --- */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    position: relative;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #ccc;
+}
+
+.main-logo {
+    height: 70px; 
+    width: auto;
+}
+
+nav {
+    position: absolute;
+    right: 20px; 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d2b48c;
+    transform: scale(1.1);
+}
+
+.cart {
+    font-size: 18px;
+    color: #8da7a9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 20px;
+}
+
+.cart:hover {
+    color: #536f6e;
+}
+
+/* --- FIL D'ARIANE --- */
+.breadcrumb {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #d2b48c;
+}
+
+.breadcrumb span {
+    color: #333;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* --- SECTION PRODUIT --- */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image, .product-info {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.product-info {
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.product-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-text p, .product-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.product-description details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #d2b48c;
+}
+
+.product-description details summary:hover {
+    color: #b08c60;
+}
+
+.quantity-cart {
+    margin-top: 20px;
+}
+
+.quantity-cart label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.quantity-cart input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-to-cart button {
+    background-color: #d2b48c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart button:hover {
+    background-color: #b08c60;
+}
+
+/* --- BOUTON MODE SOMBRE --- */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode nav a, 
+.dark-mode footer a {
+    color: white;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #444;
+}
+
+/* footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section a:hover {
+    color: #007bff;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #007bff;
+}
+
+footer .footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-section form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+footer .footer-section form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .footer-section form button:hover {
+    background-color: #0056b3;
+}
+
+footer .footer-credits {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-section {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .footer-section {
+        width: 100%;
+    }
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-logo {
+    width: 200px; 
+    height: auto;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media screen and (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info {
+        border-left: none;
+        width: 100%;
+    }
+
+    footer .footer-section {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .footer-section {
+        width: 100%;
+    }
+}
+
+/* --- Mode Sombre Couleurs --- */
+.dark-mode .header-container{
+    background-color: #333; 
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid #333; 
+}
+
+.dark-mode nav a {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .breadcrumb {
+    background-color: #e6e5e5; 
+    color: white;
+    border-bottom: 1px solid #000000; 
+}
+
+.dark-mode .breadcrumb a {
+    color: #000000;
+}
+
+.dark-mode .breadcrumb a:hover {
+    color: #ffffff;
+}
+
+.dark-mode .product-info {
+    background-color: #333; 
+    color: white;
+    border-left: 2px solid #ccc;
+}
+
+.dark-mode .product-details {
+    background-color: #565555; 
+    box-shadow: 0 4px 8px rgba(118, 118, 118, 0.1);
+}
+
+.dark-mode .add-to-cart button {
+    background-color: #ffffff;
+    color: white;
+}
+
+.dark-mode .add-to-cart button:hover {
+    background-color: #ffffff;
+}
+
+.dark-mode footer {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #444;
+    color: white;
+}
+/* Style des titres dans le footer */
+footer .footer-section h3 {
+    color: #007bff; /* Bleu pour les titres, dans le mode clair */
+}
+
+/* Mode sombre */
+.dark-mode footer .footer-section h3 {
+    color: #007bff; /* Même bleu pour les titres, dans le mode sombre */
+}
+
+/* En mode sombre, on garde le titre en noir */
+.dark-mode header h1 {
+    color: #000000; /* Noir pour le titre en mode sombre */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1; 
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    position: relative; 
+    z-index: 10; 
+}
+
+/* En mode sombre */
+.dark-mode footer {
+    background-color: #333; 
+    color: white; 
+}
+
+/* Réglage de la section des liens sociaux */
+footer .social-links {
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+footer .social-links a {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 15px; 
+    font-weight: bold; 
+}
+
+/* Éviter les décalages dus aux titres */
+footer .footer-section {
+    margin-bottom: 10px;
+}
+
+footer .footer-section h3 {
+    color: #007bff; /* Bleu pour les titres */
+    margin: 0; /* Évite l'impact du margin sur le mouvement du footer */
+    padding-bottom: 5px; /* Un petit espacement sous les titres pour maintenir l'ordre */
+}
+
+/* Enlever la couleur bleue au survol des liens dans le footer */
+
+footer .footer-section a {
+    color: inherit; /* Assure que la couleur du lien reste la même */
+    text-decoration: none; /* Retirer le soulignement des liens */
+}
+
+footer .footer-section a:hover {
+    color: inherit; /* Garder la même couleur au survol */
+    text-decoration: none; /* Pas de soulignement au survol */
+}
